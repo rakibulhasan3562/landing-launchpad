@@ -1,3 +1,11 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(245, 248, 255, 1);
+}
 /* shared style */
 .btn{
     background-color: #4E47FF;
@@ -30,7 +38,7 @@
 /* header style */
 .header{
     background-image: url(../Assets/Hero-bg.png);
-    max-width: 1440px;
+    /* max-width: 1440px; */
     height: 698px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -65,16 +73,18 @@ nav{
  text-align: center;
 }
 /* Main Section */
+
 main{
-    width: 1140px;
-    margin: 0 ;
+    max-width: 1140px;
+    margin: 0;
 }                          
 /* Action style */
 .action{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 105px 0px 0px 150px;
+    margin-top: 130px;
+
 }
 
 .action-heading{
@@ -105,7 +115,6 @@ background-color: rgba(78, 71, 255, 0.1);
 
 border-radius: 24px;
 margin-top: 120px;
-margin-left: 150px;
 }
 
 .users-title{ 
@@ -132,4 +141,63 @@ margin-left: 150px;
     padding-bottom: 50px;
     
 
+}
+
+/* Review Section */
+.reviews-section{
+   
+.reviews{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    
+}
+
+.review{
+    width: 360px;
+    background-color: #FFFFFF;
+    border: 1px solid #F2EDED;
+    border-radius: 14px;
+    padding: 24px;
+
+}
+
+
+
+.review-heading{
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 24px;
+}
+.review-title{
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+.review-description{
+    font-size: 18px;
+    width: 315px;
+    margin-top: 4px;
+}
+.reviewer-photo{
+    border-radius: 40px;
+}
+.reviewer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.reviewer-name{
+    font-size: 15px;
+}
+.reviews-date{
+    font-size: 11px;
+}
+
+
+.reviewer-name,.reviews-date{
+    margin:0px;
+    
 }
